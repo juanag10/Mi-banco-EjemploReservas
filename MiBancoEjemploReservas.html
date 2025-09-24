@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco EjemploReservas</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #004481;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    header .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    nav a:hover {
+      background: #006bb3;
+      border-radius: 5px;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background: #006bb3;
+      top: 40px;
+      left: 0;
+      min-width: 150px;
+    }
+
+    .submenu li {
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    /* 📌 Portada */
+    .banner {
+      background: url("portada.PNG") no-repeat center center;
+      background-size: contain;
+      height: 400px;
+      width: 100%;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    main section {
+      margin-bottom: 40px;
+    }
+
+    main h2 {
+      color: #004481;
+      margin-bottom: 15px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #004481;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Banco EjemploReservas</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a>
+          <ul class="submenu">
+            <li><a href="#cuentas">Cuentas</a></li>
+            <li><a href="#tarjetas">Tarjetas</a></li>
+            <li><a href="#prestamos">Préstamos</a></li>
+          </ul>
+        </li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner" id="inicio">
+  </section>
+
+  <main>
+    <section id="productos">
+      <h2>Productos</h2>
+      <p>Explora nuestras opciones de cuentas, tarjetas y prestamos adaptados a tus necesidades.</p>
+    </section>
+
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <p>Accede a transferencias, pagos en línea y banca movil de manera rápida y segura.</p>
+
+      <div class="galeria">
+        <img src="tarjetas.PNG" alt="Tarjetas de crédito">
+        <img src="cuentas.PNG" alt="Cuentas bancarias">
+        <img src="prestamos.PNG" alt="Préstamos personales">
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos un banco con compromiso de innovación, servicio al cliente y crecimiento financiero.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Puedes comunicarte con nosotros a traves de mis contactos:</p>
+      <ul>
+        <li>Teléfono: <strong>(829) 655-6004</strong></li>
+        <li>Correo: <strong>juanaguz@bancoejemploreservas.com</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Banco EjemploReservas. Todos los derechos reservados.</p>
+    <p>(829) 655-6004 | juanaguz@bancoejemploreservas.com</p>
+  </footer>
+</body>
+</html>
